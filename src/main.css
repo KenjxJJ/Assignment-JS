@@ -1,0 +1,154 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: #f3f1f1;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 1rem 0;
+  margin: 5rem auto auto;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  padding: 1.6rem 0 0.8rem 0;
+  margin-left: 13px;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  display: block;
+  width: 78%;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #30303054;
+  border-radius: 2rem;
+}
+.form-signin .form-control:focus,
+.form-control .form-control:hover {
+  outline: none;
+  border-color: rebeccapurple;
+  transition: border-color 0.4s ease-in;
+  z-index: 2;
+}
+
+button {
+  margin: 1.5rem 0.2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  outline: none;
+  border: 1px solid;
+  background-color: #f5f5f5;
+  color: rebeccapurple;
+  border-radius: 2.3rem;
+  width: 7rem;
+}
+button:focus,
+button:hover {
+  background-color: rebeccapurple;
+  color: #f5f5f5;
+}
+.sign-up-text {
+  padding: 0.7rem 0rem 0.1rem;
+  margin: 0rem;
+}
+.sign-up {
+  margin-top: 0.8rem;
+  background-color: rgba(33, 187, 54, 0.685);
+  color: #fff;
+}
+
+.sign-up:hover,
+.sign-up:focus {
+  background-color: rgba(21, 180, 42, 0.938);
+  color: #fff;
+  transition: color 0.3s ease;
+}
+/***************************************************/
+/* 
+* Blog Page
+*/
+.blog-landing {
+  display: block;
+}
+
+.blog {
+  background-color: aquamarine;
+  padding: 1.4rem;
+  border-radius: .3rem;
+  margin: 0.8rem .2rem;
+}
+.modify-btns {
+  margin: 2rem 0rem 0rem;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: flex-end;
+}
+.btn {
+  border-radius: 0.2rem;
+  display: inline;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.btn-edit {
+  background-color: rebeccapurple;
+  color: #fff;
+}
+
+.btn-delete {
+  background-color: rgb(218, 67, 67);
+  color: #fff;
+}
+.btn-add{
+  margin-left: 1.2rem;
+  background-color: rgb(113, 92, 207);
+  color: #fff;
+}
+
+.new-article{
+  padding: 0.5rem 1rem;
+}
+
+.new-article > * {
+  margin-left: .2rem;
+}
+
+.new-article input,textarea{
+   padding: 0.4rem .8rem;
+   width: 56%;
+}
+
+textarea{
+   min-height: 45vh;
+}
+
+#save{
+  width:4rem;
+  display: block;
+  background-color: rgb(96, 0, 192);
+  color: #ffe;
+  border:1px solid rebeccapurple;
+}

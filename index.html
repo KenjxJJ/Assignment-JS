@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Assignment 001</title>
+    <link rel="stylesheet" href="src/main.css">
 </head>
+
 <body>
-    
+    <form class="form-signin" action="/blogPage.html">
+         <h1 class="brand">Blog Me</h1>
+        <h2 class="">Please sign in...</h2>
+        <label for="inputEmail">Email address :</label>
+        <input type="email" id="inputEmail" class="form-control" 
+        placeholder="Email address" required autofocus>
+        <label for="inputPassword">Password :</label>
+        <input type="password" id="inputPassword" 
+        class="form-control" placeholder="Password" required>
+       
+       <!-- Implement auto-sign -->
+        <!-- <div class="">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember mes
+            </label>
+        </div> -->
+        <button class="sign-in" type="submit">Sign In</button>
+        <p class="sign-up-text"> Not a member, sign up now!</p>
+        <button class="sign-up" type="submit">Sign Up</button>
+        <p>Copyright &copy; 2020</p>
+    </form>
+    <script src="/src/script.js"></script>
 </body>
+
 </html>
