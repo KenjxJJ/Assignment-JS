@@ -21,7 +21,7 @@ h6 {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
-.form-signin {
+.form-signin, .form-signup {
   width: 100%;
   max-width: 330px;
   padding: 1rem 0;
@@ -35,7 +35,7 @@ label {
   margin-left: 13px;
 }
 
-.form-signin .form-control {
+.form-control {
   position: relative;
   box-sizing: border-box;
   height: auto;
@@ -74,18 +74,13 @@ button:hover {
   padding: 0.7rem 0rem 0.1rem;
   margin: 0rem;
 }
-.sign-up {
-  margin-top: 0.8rem;
-  background-color: rgba(33, 187, 54, 0.685);
-  color: #fff;
+.link-sign-up{
+  font-size: 1.2rem;
+  color:rgb(26, 26, 167);
+  font-style: italic;
+  cursor: pointer;
 }
 
-.sign-up:hover,
-.sign-up:focus {
-  background-color: rgba(21, 180, 42, 0.938);
-  color: #fff;
-  transition: color 0.3s ease;
-}
 /***************************************************/
 /* 
 * Blog Page
