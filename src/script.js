@@ -41,18 +41,20 @@ signUpLink.addEventListener('click', () => {
 
   document.querySelector(".intro").textContent = 'Create account...';
   document.querySelector("button").textContent = 'Sign up';
-  document.querySelector("button").classList.remove('btn-sign-in');
+  document.querySelector("button").removeAttribute('class', 'btn-sign-in');
   document.querySelector(".form-signin").removeChild(signUpText);
 
   // change classList for the form
-  document.querySelector("form").classList.remove("form-signin");
+  document.querySelector("form").removeAttribute("class", "form-signin");
   document.querySelector("form").classList.add("form-signup");
+
 
   // Obtain new class for the form
   document.querySelector(".form-signup").addEventListener("submit",
     (e) => {
       e.preventDefault();
       createUser();
+      location.reload()
     });
 });
 
@@ -68,24 +70,25 @@ const checkUser = () => {
 
   if (user !== null) {
     if (email === user[0].email && password === user[0].password) {
-      document.forms[0].action = '/blogPage.html';
+      document.forms[0].action = './blogPage.html';
       alert(`Welcome to Blog Me! `);
     }
     else {
-      alert("Sign up please!---");
+      alert("Sign up please!");
     }
   } else {
-    alert("Sign up please!**");
+    alert("Sign up please!");
   }
 
 }
 
-const signInForm = document.querySelector(".form-signin");
 // Submit, under login attempt
 
 document.querySelector('.btn-sign-in').addEventListener('click', () => {
-  signInForm.addEventListener("submit", () => {
+  const signInForm = document.querySelector(".form-signin");
+  signInForm.addEventListener("submit", (e) => {
     checkUser();
+    e.stopPropagation();
   });
 });
 
