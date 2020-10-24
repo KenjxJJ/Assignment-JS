@@ -11,6 +11,7 @@ body {
   padding: 1rem 0;
   background-color: #f3f1f1;
   font-family: Georgia, "Times New Roman", Times, serif;
+  justify-content: space-around;
 }
 h1,
 h2,
@@ -20,14 +21,13 @@ h5,
 h6 {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
-.brand{
-color: #639;
+.brand {
+  color: #639;
 }
 .form-signin,
 .form-signup {
   width: 100%;
   max-width: 330px;
-  padding: 1rem 0;
   margin: 5rem auto auto;
 }
 
@@ -94,11 +94,16 @@ button:hover {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 1.3rem;
-  min-height: 98vh;
+  min-height: 88vh;
+  max-width: 700px;
 }
 
-.blog-landing > *{
-   flex: 1 1 100%;
+.blog-landing > * {
+  flex: 1 1 100%;
+}
+
+.blog-landing .form-control {
+  border-radius: 5px;
 }
 .article-section {
   margin: 0.5rem 0.5rem 2rem;
@@ -164,8 +169,13 @@ textarea {
   width: 56%;
 }
 
-textarea {
+#inputText {
   min-height: 45vh;
+}
+#inputCategory.form-control,
+#inputTitle.form-control {
+  height: 50px;
+  overflow-y: hidden;
 }
 
 #save {
@@ -178,13 +188,8 @@ textarea {
 
 /** Edit */
 .edit {
-  width: 65%;
+  width: 85%;
   border: 1px solid rebeccapurple;
-  padding: 0.3rem 0.7rem;
-}
-
-textarea#inputTitle {
-  min-height: 12px;
 }
 
 #edit-text {

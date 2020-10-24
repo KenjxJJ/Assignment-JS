@@ -89,10 +89,10 @@ const editBlog = (article, index) => {
   document.querySelector(".article-section").innerHTML =
     `<form id="edit-text">    
     <label for="inputCategory">Category :</label>
-    <input type="text" id="inputCategory" 
-    value=${article.category} class="edit form-control" required/>
+    <textarea id="inputCategory"  class="edit form-control" max-length="20"
+    >${article.category}</textarea>
     <label for="inputTitle">Title : </label>
-    <input class="edit form-control" id="inputTitle" value=${article.title} required/>
+    <textarea id="inputTitle" class="edit form-control" max-length="50">${article.title} </textarea>
     <label for="inputDate">Date:</label>
     <input type="date" class="edit form-control" id="inputDate" 
     value=${dateReformatted} required/>
