@@ -21,7 +21,8 @@ h6 {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
-.form-signin, .form-signup {
+.form-signin,
+.form-signup {
   width: 100%;
   max-width: 330px;
   padding: 1rem 0;
@@ -37,7 +38,6 @@ label {
 
 .form-control {
   position: relative;
-  box-sizing: border-box;
   height: auto;
   display: block;
   width: 78%;
@@ -46,10 +46,11 @@ label {
   border: 2px solid #30303054;
   border-radius: 2rem;
 }
-.form-signin .form-control:focus,
-.form-control .form-control:hover {
+.form-control:focus,
+.blog-landing > .form-control :focus,
+textarea:focus {
   outline: none;
-  border-color: rebeccapurple;
+  border: 2px solid rebeccapurple;
   transition: border-color 0.4s ease-in;
   z-index: 2;
 }
@@ -74,9 +75,9 @@ button:hover {
   padding: 0.7rem 0rem 0.1rem;
   margin: 0rem;
 }
-.link-sign-up{
+.link-sign-up {
   font-size: 1.2rem;
-  color:rgb(26, 26, 167);
+  color: rgb(26, 26, 167);
   font-style: italic;
   cursor: pointer;
 }
@@ -86,28 +87,50 @@ button:hover {
 * Blog Page
 */
 .blog-landing {
-  display: block;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1.3rem;
+  min-height: 98vh;
+}
+
+.blog-landing > *{
+   flex: 1 1 100%;
+}
+.article-section {
+  margin: 0.5rem 0.5rem 2rem;
 }
 
 .blog {
-  background-color: aquamarine;
+  background-color: #cccad6;
+  color: rgba(17, 17, 17, 0.87);
   padding: 1.4rem;
   border-radius: 0.3rem;
   margin: 0.8rem 0.2rem;
 }
+
 .modify-btns {
   margin: 2rem 0rem 0rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
 }
+
 .btn {
   border-radius: 0.2rem;
   display: inline;
   font-size: 0.8rem;
   margin-bottom: 0.3rem;
+  border: none;
 }
 
+.btn-add {
+  margin-left: 1.2rem;
+  background-color: rgb(113, 92, 207);
+  color: #fff;
+  display: block;
+}
 .btn-edit {
   background-color: rebeccapurple;
   color: #fff;
@@ -119,16 +142,10 @@ button:hover {
 }
 .btn-delete:hover,
 .btn-delete:focus {
-    background-color: rgb(202, 5, 5);
-    color: #fff;
-    border: none;
-    transition: background-color 0.4s ease;
-  }
-
-.btn-add {
-  margin-left: 1.2rem;
-  background-color: rgb(113, 92, 207);
+  background-color: rgb(202, 5, 5);
   color: #fff;
+  border: none;
+  transition: background-color 0.4s ease;
 }
 
 .new-article {
@@ -159,15 +176,20 @@ textarea {
 
 /** Edit */
 .edit {
-  width: 75%;
+  width: 65%;
   border: 1px solid rebeccapurple;
   padding: 0.3rem 0.7rem;
 }
- 
+
 textarea#inputTitle {
   min-height: 12px;
 }
 
 #edit-text {
   padding: 0rem 1.5rem;
+}
+
+footer {
+  align-self: flex-end;
+  padding: 1.9rem 0.3rem;
 }
