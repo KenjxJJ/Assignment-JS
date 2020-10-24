@@ -20,7 +20,9 @@ h5,
 h6 {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
-
+.brand{
+color: #639;
+}
 .form-signin,
 .form-signup {
   width: 100%;
@@ -77,7 +79,7 @@ button:hover {
 }
 .link-sign-up {
   font-size: 1.2rem;
-  color: rgb(26, 26, 167);
+  color: #333399;
   font-style: italic;
   cursor: pointer;
 }
@@ -127,17 +129,17 @@ button:hover {
 
 .btn-add {
   margin-left: 1.2rem;
-  background-color: rgb(113, 92, 207);
+  background-color: #339999;
   color: #fff;
   display: block;
 }
 .btn-edit {
-  background-color: rebeccapurple;
+  background-color: #669933;
   color: #fff;
 }
 
 .btn-delete {
-  background-color: rgb(218, 67, 67);
+  background-color: #993333;
   color: #fff;
 }
 .btn-delete:hover,
