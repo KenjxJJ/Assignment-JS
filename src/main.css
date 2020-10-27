@@ -184,6 +184,10 @@ textarea {
   border: 1px solid rebeccapurple;
  }
 
+textarea#inputTitle {
+  min-height: 12px;
+}
+
 #edit-text {
   padding: 0rem 1.5rem;
 }
