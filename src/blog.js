@@ -58,7 +58,7 @@ const addArticle = () => {
         <input type="text" id="inputCategory" class="form-control"
         placeholder="Category" required autofocus>
         <label for="inputTitle">Title :</label>
-        <input id="inputTitle" class="form-control" required>
+        <input id="inputTitle" class="form-control" placeholder="Title" required>
         <label for="inputDate">Date :</label>
         <input type="date" id="inputDate"
         class="form-control" placeholder="Date" required>
@@ -75,7 +75,11 @@ const addArticle = () => {
   });
 };
 
-document.querySelector(".btn-add").addEventListener("click", addArticle);
+document.querySelector(".btn-add").addEventListener("click", () =>{
+  addArticle();
+  document.querySelector(".btn-add").classList.toggle("disabled");
+  document.querySelector(".btn-add").setAttribute( "disabled","");
+});
 
 
 const editBlog = (article, index) => {
