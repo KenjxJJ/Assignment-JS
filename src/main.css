@@ -97,6 +97,7 @@ button:hover {
   padding: 1.3rem;
   min-height: 88vh;
   max-width: 700px;
+  margin: 0 auto;
 }
 
 .blog-landing > * {
